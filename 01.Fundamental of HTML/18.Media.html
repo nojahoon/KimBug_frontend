@@ -1,0 +1,44 @@
+<!-- 음성 파일 넣고 싶을 때 사용하는 audio 태그
+    <audio src=""></audio>
+
+    오디오버튼 같은경우 오디오 음향/재생 조절하기 위해 사용하는 controls attribute. 값을 적어줄 필요는없음.
+    
+    자동재생을 원할시에는 autoplay attribute를 써주면됨
+    =>크롬에서 자동 재생이 안되도록 막아두었음... 브라우저 정책이 바뀜
+
+    -->
+
+
+<!-- <audio src="./assets/audios/kimbug.mp3" loop autoplay></audio> -->
+
+<audio src="./assets/audios/kimbug.mp3" controls></audio>
+
+
+<!-- mp3 지원하지 않는 브라우저가 있을 수 있음 
+    canIuse.com 에 의하면 firefox 아주낮은 버전에서는 지원안함..
+    wav의 경우 인터넷 익스플로져는 아예 지원안함..
+    wav가 사용안되는 사용자를 위해서 mp3를 넣어주는식으로..-->
+
+<audio controls>
+    <source src="./assets/audios/kimbug.wav" type="audio/wav">
+    <source src="./assets/audios/kimbug.mp3" type="audio/mpeg">
+    <source src="./assets/audios/kimbug.ogg" type="audio/ogg">   
+    <!-- 그마저도 사용이 안된다면 표시됨.. -->
+    <p>당신의 브라우저를 버리시고 크롬을 사용하시는게 어떨까요?</p>
+</audio>
+
+
+
+<!-- <video controls src="./assets/videos/kimbug.mov"></video> -->
+
+<video controls>
+    <source src="./assets/videos/kimbug.mov" type="video/mp4">
+    <source src="./assets/videos/kimbug.mp4" type="video/mp4">
+    <p>브라우저를 업데이트 하심이 어떠신가요?</p>
+    <a href="https://browsehappy.com">브라우저 업데이트</a>
+</video>
+
+
+<!-- 또다른 html이나 컨텐츠를 집어넣을때 사용하는 iframe - 유튜브/트위터 share 해서 넣어줌. -->
+<iframe src="https://edu.goorm.io" frameborder="0"></iframe>
+

@@ -1,0 +1,61 @@
+<!--<input type="text">
+    
+    Synta Alert => type이라는 attribute를 반드시 적어야함
+    type="number"
+    type="text"
+    ....email, password,tel,file,radio..
+
+    
+
+-->
+
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Form - Input</title>
+  <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./styles/lecture_form_styles.css">
+</head>
+<body>
+    <!--아무값이 없을때 기본문구를 설정하는 placeholder-->
+    <!--최대 글자수의 입력을 결정해주는 maxlength-->
+    <!--최소 글자수의 입력을 결정해주는 minlength-->
+    <!--무조건 입력을 해야하는 태그임을 명시하는 required-->
+    <!--초기값을 세팅할 수 있는 value -->
+    <!--미리 유효성을 검사하는 것이 효율적-->
+    
+<form action="" method="GET">
+    <input type="text" placeholder="input값을 조정할 수 없습니다." minlength="5" maxlength="13" disabled>
+    <input type="text" placeholder="아이디를 입력하세요" minlength="5" maxlength="13" required>
+    <input type="password" placeholder="비밀번호를 입력하세요" minlength="6">
+    <input type="text" placeholder="이름을 입력하세요" >
+    <input type="text" placeholder="이름을 입력하세요" value="초기값세팅">
+    <button>Submit</button>
+</form>
+
+<form action="" method="GET">
+    <input type="email" placeholder="이메일을 입력하세요">
+    <button>Submit</button>    
+</form>
+
+<form action="" method="GET">
+    <input type="url" placeholder="웹 포트폴리오 URL을 적으시오">
+    <button>Submit</button>    
+</form>
+
+<form action="" method="GET">
+    <input type="number" placeholder="나이를 입력하세요" min="12" max="122">
+    <button>Submit</button>    
+</form>
+
+<!--허용하는 파일의 확장자를 정해주는 accept-->
+<form action="" method="GET">
+    <input type="file" accept=".png,.jpg">
+    <button>Submit</button>    
+</form>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>표 Table(2) - 심화</title>
+    <link rel="stylesheet" href="./styles/lecture_table_styles.css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <!--테이블 헤더 th 한테만 쓸수있는 scope Attribute
+                    column에 대한 header 는col
+                    row에 대한 header는 row 
+                    browser에게는 훨씬 풍부한 정보 제공-->
+                <th></th>
+                <th scope="col">월</th>
+                <th scope="col">화</th>
+                <th scope="col">수</th>
+                <th scope="col">목</th>
+                <th scope="col">금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1교시</th>   <!--이 줄에 대한 테이블 헤더가 된다.-->
+                <td class="html-css-basic" rowspan="2">왕초보 HTML &amp; CSS </td> <!--& 표현하기 위해 escape code 사용-->
+                <td>모각코</td>
+                <td class="html-css-basic" rowspan="2">왕초보 HTML &amp; CSS </td>
+                <td>모각코</td>
+                <td class="html-css-basic" rowspan="2">왕초보 HTML &amp; CSS </td>
+            </tr>
+            <tr>
+                <th scope="row">2교시</th>                
+                <!--<td row>왕초보</td>-->
+                <td class="js-skillup" rowspan="2">JavaScript 스킬업</td>
+                <!--<td row>왕초보</td>-->
+                <td class="js-skillup" rowspan="2">JavaScript 스킬업</td>
+                <!--<td row>왕초보</td>-->
+            </tr>
+            <tr>
+                <th scope="row">3교시</th>                
+                <td class="js-basic">JavaScript 시작반</td>
+                 <!--<td row>js 스킬업</td>-->
+                <td class="js-basic">JavaScript 시작반</td>
+                <!--<td row>js 스킬업</td>-->
+                <td class="js-basic">JavaScript 시작반</td>                
+            </tr>
+            <tr>
+                <th colspan="6">점심시간</th>
+            </tr>
+            <tr>
+                <th scope="row">4교시</th>   
+                <td class="sass-basic">Sass 기초반</td>                 
+                <td class="portfolio" rowspan="2">HTML &amp; CSS 포트폴리오반</td>
+                <td rowspan="2">Open Seminnar</td>                 
+                <td class="portfolio" rowspan="2">HTML &amp; CSS 포트폴리오반</td>
+                <td class="sass-basic">Sass 기초반</td>                 
+            </tr>
+            <tr>
+                <th scope="row">5교시</th>              
+                <td class="coding">모각코</td>                                                 
+                <td class="coding">모각코</td>                 
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
