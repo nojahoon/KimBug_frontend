@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/lecture-breadcrumb-pagination.css">
+    <title>Breadcrumb</title>
+</head>
+<body>
+    <!--인터넷의 접근성을 높여주는 API
+        WAI-ARIA
+        Web Accessibility Initiative
+        Accessible Rich Internet Applications
+
+        인터넷 사용자의 상당수가 마우스,키보드 이용 불가능한 사람들 많고, 그 사람들의 웹 이용을 돕는것이 front 개발자들이 할 일
+        aria-lebel attribute => aria 스크린리더기로 읽을 때 다른 label로 읽힌다.
+        aria-lebel은 global attribute => 어느경우에도 다 쓸 수 있는 attribute.
+    -->
+    
+    <div class="breadcrumb">
+        <a href="https://github.com/rohjs" aria-label="Go to rohjs profile page">
+            rohjs
+        </a>
+        <a href="https://github.com/rohjs/bugless-101" aria-label="Go to bugless-101 repository page">
+            bugless-101
+        </a>
+    </div>
+
+    
+    
+    <div class="pagination">
+        <!--anchor tag 이기때문에 button과 달리 disabled를 적어줄 수는 없고 클래스명으로 해줌-->
+        <a href="#" aria-label="Go to previous page" class="disabled">Previous
+        </a>
+        <ol>
+            <li class="current-page">
+                <a href="#" aria-label="Current Page. Go to page 1">1</a>
+            </li>
+            <li>
+                <a href="#" aria-label="Go to page 2">2</a>
+            </li>
+            <li>
+                <a href="#" aria-label="Go to page 3">3</a>
+            </li>
+            <li>
+                <a href="#" aria-label="Go to page 4">4</a>
+            </li>
+            <li>
+                <button type="button" disabled>
+                ...
+                </button>
+            </li>
+                <a href="#" aria-label="Go to page 5">5</a>
+            </li>
+            <li>
+                <a href="#" aria-label="Go to page 6">6</a>
+            </li>
+            <li>
+                <a href="#" aria-label="Go to page 7">7</a>
+            </li>
+            <li>
+                <a href="#" aria-label="Go to page 8">8</a>
+            </li>
+        </ol>    
+        <a href="#" aria-lebel="Go to next page">Next</a>
+    </div>
+</body>
+</html>
