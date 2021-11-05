@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+.tab-menu {
+  padding-left: 0;
+  background-color: black;
+  overflow: hidden;
+  list-style-type: none;
+  border-bottom: 1px solid #e5eaef;
+  max-width: 540px;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 3px solid blue;
+  font-weight: 500;
+}
+
+.tab-menu-item {
+  float: left;
+  size: 18px;
+  margin-right: 16px;
+}
+
+.tab-menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tab-menu-item a {
+  display: block;
+  padding: 16px 20px;
+}
+.next-box {
+  background: #0ff;
+}
